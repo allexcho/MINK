@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Hanken Grotesk", sans-serif;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo h1 {
+  font-size: 1.3rem;
+  padding-left: 1rem;
+}
+.logo h1 a {
+  text-decoration: none;
+  color: #334218;
+}
+
+.logo img {
+  width: 3.5rem;
+  border-radius: 50%;
+  margin-left: 3rem;
+}
+
+nav ul {
+  list-style-type: none;
+  margin-right: 3rem;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #334218;
+}
+
+.intro {
+  padding: 3rem;
+  color: #334218;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+}
+
+.containerleft {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.containerleft h2 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.containerleft p {
+  padding: 1rem 1rem 1.25rem 0rem;
+}
+
+.containerright img {
+  width: 25rem;
+  border-radius: 1.5rem;
+  display: block;
+  padding: 1rem;
+}
+
+.button button {
+  padding: 0.25rem 0.75rem;
+  font-size: 14px;
+  border: 2px solid #334218;
+  border-radius: 5px;
+  background-color: #334218;
+  color: white;
+}
+
+.button button:hover {
+  background-color: white;
+  color: #334218;
+  border-color: #334218;
+}
+
+.buttommain {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+}
+
+.buttomimgs ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+}
+
+.buttomimgs img {
+  width: 20rem;
+  border-radius: 0.25rem;
+}
+
+.buttomimgs ul {
+  list-style-type: none;
+  padding-bottom: 2rem;
+}
+
+.buttomimgs p {
+  font-size: 1rem;
+  text-align: center;
+  padding: 0 3rem 2rem 3rem;
+}
