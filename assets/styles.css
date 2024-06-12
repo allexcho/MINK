@@ -127,3 +127,77 @@ nav ul li a {
   text-align: center;
   padding: 0 3rem 2rem 3rem;
 }
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 3rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  color: #334218;
+}
+
+.cards-left,
+.cards-middle,
+.cards-right {
+  flex: 1;
+  padding: 1rem;
+  text-align: center;
+}
+
+.cards h2 {
+  width: 100%;
+  text-align: center;
+}
+
+.cards svg {
+  width: 3rem;
+  padding: 0.25rem;
+  padding-top: 2rem;
+}
+
+.cards h3 {
+  padding: 0.5rem;
+}
+
+.footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: #334218;
+  padding: 1.5rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+}
+
+.footer-left img {
+  width: 15rem;
+}
+
+.footer-right {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-right h3 {
+  font-size: 1.5rem;
+}
+
+.footer-right a {
+  text-decoration: none;
+  color: #334218;
+}
+
+.footer-icons {
+  font-size: 1.3rem;
+  padding: 1.2rem 0 0 1rem;
+}
+
+.footer-icons a {
+  display: inline-block;
+}
+
+.facebook {
+  padding: 0 1rem 0 1rem;
+}
