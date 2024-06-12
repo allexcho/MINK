@@ -173,6 +173,7 @@ nav ul li a {
 
 .footer-left img {
   width: 15rem;
+  border-radius: 15px;
 }
 
 .footer-right {
