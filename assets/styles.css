@@ -10,7 +10,7 @@ header {
   justify-content: space-between;
   padding: 10px;
   background-color: white;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.35);
 }
 
 .logo {
@@ -48,6 +48,11 @@ nav ul li a {
   color: #334218;
 }
 
+nav ul li a:hover {
+  text-decoration: underline;
+  text-decoration-color: #334218;
+}
+
 .intro {
   padding: 3rem;
   color: #334218;
@@ -57,7 +62,7 @@ nav ul li a {
   display: flex;
   justify-content: center;
   gap: 2rem;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.35);
   border-radius: 8px;
 }
 
@@ -99,7 +104,7 @@ nav ul li a {
 }
 
 .bottommain {
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.35);
   border-radius: 8px;
 }
 
@@ -134,7 +139,7 @@ nav ul li a {
   align-items: flex-start;
   flex-wrap: wrap;
   padding: 3rem;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.35);
   border-radius: 8px;
   color: #334218;
 }
@@ -168,12 +173,22 @@ nav ul li a {
   justify-content: space-around;
   color: #334218;
   padding: 1.5rem;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.35);
 }
 
 .footer-left img {
   width: 15rem;
   border-radius: 15px;
+}
+
+.footer-middle {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 2.92rem;
+}
+
+.footer-middle h3 {
+  font-size: 1.5rem;
 }
 
 .footer-right {
