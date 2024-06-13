@@ -53,6 +53,50 @@ nav ul li a:hover {
   text-decoration-color: #334218;
 }
 
+#menu-toggle {
+  display: none;
+}
+
+.hamburger-icon {
+  display: block;
+  cursor: pointer;
+  font-size: 24px;
+  padding: 10px;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  z-index: 2;
+}
+
+nav {
+  display: none;
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.35);
+  border-radius: 8px;
+}
+
+#menu-toggle:checked + .hamburger-icon + nav {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+  padding: 10px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+nav ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px 0;
+}
+
 .intro {
   padding: 3rem;
   color: #334218;
@@ -216,4 +260,72 @@ nav ul li a:hover {
 
 .facebook {
   padding: 0 1rem 0 1rem;
+}
+
+@media (min-width: 800px) {
+  .hamburger-icon {
+    display: none;
+  }
+  nav {
+    display: block;
+    position: static;
+    box-shadow: none;
+    background-color: transparent;
+  }
+  nav ul {
+    flex-direction: row;
+  }
+  nav ul li {
+    margin: 0 10px;
+  }
+
+  .containerleft {
+    padding-left: 2rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .container {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .containerleft {
+    padding: 0 1rem 2rem 1rem;
+  }
+
+  .containerright img {
+    width: 18rem;
+  }
+
+  .cards {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer-container {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .footer-middle {
+    padding: 1.5rem;
+  }
+
+  .footer-right {
+    padding: 1.5rem;
+  }
+
+  .footer-left img {
+    padding: 1rem;
+  }
+
+  .bottomimgs img {
+    width: 18rem;
+  }
 }
