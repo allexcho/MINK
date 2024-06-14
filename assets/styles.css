@@ -328,4 +328,7 @@ nav ul li {
   .bottomimgs img {
     width: 18rem;
   }
+  .footer-left img {
+    border-radius: 15px;
+  }
 }
