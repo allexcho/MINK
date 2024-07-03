@@ -332,3 +332,30 @@ nav ul li {
     border-radius: 15px;
   }
 }
+
+@media (max-width: 400px) {
+  .containerright img {
+    width: 15rem;
+  }
+  .bottomimgs img {
+    width: 15rem;
+  }
+  .bottomimgs ul {
+    padding-top: 1rem;
+    padding-bottom: 0;
+  }
+  .bottomimgs p {
+    padding: 1rem;
+  }
+  .cards {
+    padding: 1.5rem;
+  }
+  .cards-left,
+  .cards-middle,
+  .cards-right {
+    padding: 0;
+  }
+  .footer-left img {
+    border-radius: 1.5rem;
+  }
+}
