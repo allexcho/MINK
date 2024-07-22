@@ -262,7 +262,7 @@ nav ul li {
   padding: 0 1rem 0 1rem;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 700px) {
   .hamburger-icon {
     display: none;
   }
@@ -278,13 +278,28 @@ nav ul li {
   nav ul li {
     margin: 0 10px;
   }
-
+  .container {
+    gap: 0;
+  }
   .containerleft {
-    padding-left: 2rem;
+    padding-left: 3rem;
+  }
+  .containerright {
+    padding-right: 2rem;
+  }
+  .cards {
+    padding: 1.5rem;
   }
 }
 
-@media (max-width: 500px) {
+@media (min-width: 700px) and (max-width: 760px) {
+  .footer-middle {
+    padding-bottom: 0;
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 699px) {
   .container {
     display: flex;
     flex-direction: column-reverse;
