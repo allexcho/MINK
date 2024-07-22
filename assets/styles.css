@@ -30,7 +30,7 @@ header {
 .logo img {
   width: 3.5rem;
   border-radius: 50%;
-  margin-left: 3rem;
+  padding-left: 10px;
 }
 
 nav ul {
@@ -372,5 +372,13 @@ nav ul li {
   }
   .footer-left img {
     border-radius: 1.5rem;
+  }
+  @media (min-width: 300px) and (max-width: 399px) {
+    .containerright img {
+      width: 11.5rem;
+    }
+    .bottomimgs img {
+      width: 11.5rem;
+    }
   }
 }
