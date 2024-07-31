@@ -291,6 +291,44 @@ nav ul li {
   box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
 }
 
+.mainShop {
+  padding: 2rem;
+}
+
+.containerShop {
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.35);
+  border-radius: 8px;
+  padding: 2rem;
+}
+
+.containerShop ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-around;
+  list-style-type: none;
+}
+
+.containerShop ul li {
+  text-align: center;
+  padding: 0.2rem;
+}
+
+.containerShop button {
+  padding: 0.25rem 0.75rem;
+  border: 2px solid #334218;
+  border-radius: 5px;
+  background-color: #334218;
+  color: white;
+}
+
+.containerShop img {
+  width: 25rem;
+  border-radius: 5px;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+}
+
 @media (min-width: 800px) {
   .hamburger-icon {
     display: none;
@@ -330,7 +368,7 @@ nav ul li {
     padding: 2rem;
   }
   .aboutleft img {
-  width: 22.5rem;
+    width: 22.5rem;
   }
   .aboutright p {
     width: 15rem;
@@ -404,53 +442,67 @@ nav ul li {
   }
 }
 
-  @media (min-width: 300px) and (max-width: 400px) {
-    .containerright img {
-      width: 15rem;
-    }
-    .bottomimgs img {
-      width: 15rem;
-    }
-    .bottomimgs ul {
-      padding-top: 1rem;
-      padding-bottom: 0;
-    }
-    .bottomimgs p {
-      padding: 1rem;
-    }
-    .cards {
-      padding: 1.5rem;
-    }
-    .cards-left,
-    .cards-middle,
-    .cards-right {
-      padding: 0;
-    }
-    .footer-left img {
-      border-radius: 1.5rem;
-    }
-    .containerright img {
-      width: 14rem;
-    }
-    .bottomimgs img {
-      width: 14rem;
-    }
-    .aboutcontainer {
-      display: flex;
-      flex-direction: column;
-    }
-    .aboutleft img {
-      width: 14rem;
-      box-shadow: 10px 10px 15px rgba(0, 0, 0, 0);
-    }
-    .aboutright {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
+@media (min-width: 401px) and (max-width: 550px) {
+  .containerShop img {
+    width: 20rem;
+  }
+  .containerShop {
+    padding: 1rem 0 0 0;
+  }
+}
 
-    .aboutright p {
-      width: 15.5rem;
-    }
+@media (min-width: 300px) and (max-width: 400px) {
+  .containerright img {
+    width: 15rem;
+  }
+  .bottomimgs img {
+    width: 15rem;
+  }
+  .bottomimgs ul {
+    padding-top: 1rem;
+    padding-bottom: 0;
+  }
+  .bottomimgs p {
+    padding: 1rem;
+  }
+  .cards {
+    padding: 1.5rem;
+  }
+  .cards-left,
+  .cards-middle,
+  .cards-right {
+    padding: 0;
+  }
+  .footer-left img {
+    border-radius: 1.5rem;
+  }
+  .containerright img {
+    width: 14rem;
+  }
+  .bottomimgs img {
+    width: 14rem;
+  }
+  .aboutcontainer {
+    display: flex;
+    flex-direction: column;
+  }
+  .aboutleft img {
+    width: 14rem;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0);
+  }
+  .aboutright {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .aboutright p {
+    width: 15.5rem;
+  }
+  .containerShop {
+    padding: 1rem 0 0 0;
+  }
+  .containerShop img {
+    width: 16rem;
   }
 }
