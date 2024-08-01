@@ -324,6 +324,12 @@ nav ul li {
   color: white;
 }
 
+.containerShop button:hover {
+  background-color: white;
+  color: #334218;
+  border-color: #334218;
+}
+
 .containerShop img {
   width: 25rem;
   border-radius: 5px;
