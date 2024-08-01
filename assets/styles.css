@@ -329,6 +329,85 @@ nav ul li {
   box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
 }
 
+.containerShop h4 {
+  padding-top: 0.35rem;
+}
+
+.registerMain {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper {
+  position: relative;
+  max-width: 430px;
+  width: 100%;
+  background: #fff;
+  padding: 34px;
+  border-radius: 6px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.wrapper h2 {
+  position: relative;
+  font-size: 22px;
+  font-weight: 600;
+  color: #333;
+}
+
+.wrapper form {
+  margin-top: 30px;
+}
+
+.wrapper form .input-box {
+  height: 52px;
+  margin: 18px 0;
+}
+
+form .input-box input {
+  height: 3rem;
+  width: 25rem;
+  outline: none;
+  padding: 0 15px;
+  color: #333;
+  border: 1.5px solid #c7bebe;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+form .policy {
+  display: flex;
+  align-items: center;
+}
+
+form h3 {
+  color: #334218;
+  font-size: 14px;
+  font-weight: 500;
+  margin-left: 10px;
+}
+
+.input-box.button input {
+  color: #fff;
+  border: none;
+  background: #334218;
+  cursor: pointer;
+  width: 100%;
+}
+
+form .text h3 {
+  color: #333;
+  width: 100%;
+  text-align: center;
+}
+
+form .text h3 a {
+  color: #334218;
+  text-decoration: none;
+}
+
 @media (min-width: 800px) {
   .hamburger-icon {
     display: none;
@@ -359,6 +438,16 @@ nav ul li {
   }
 }
 
+@media (min-width: 800px) and (max-width: 950px) {
+  .aboutcontainer {
+    gap: 1rem;
+  }
+
+  .aboutleft img {
+    width: 20rem;
+  }
+}
+
 @media (min-width: 700px) and (max-width: 799px) {
   .containerleft {
     padding-left: 1.5rem;
@@ -368,7 +457,7 @@ nav ul li {
     padding: 2rem;
   }
   .aboutleft img {
-    width: 22.5rem;
+    width: 21rem;
   }
   .aboutright p {
     width: 15rem;
