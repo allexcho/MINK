@@ -61,10 +61,10 @@ nav ul li a:hover {
   cursor: pointer;
   font-size: 24px;
   padding: 10px;
-  position: absolute;
+  position: fixed;
   right: 20px;
   top: 20px;
-  z-index: 2;
+  z-index: 10;
 }
 
 nav {
@@ -78,6 +78,7 @@ nav {
 
 #menu-toggle:checked + .hamburger-icon + nav {
   display: block;
+  background-color: white;
 }
 
 nav ul {
@@ -352,6 +353,7 @@ nav ul li {
   padding: 34px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.35);
   border-radius: 8px;
+  z-index: 1;
 }
 
 .wrapper h4 {
