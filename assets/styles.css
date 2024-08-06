@@ -388,6 +388,34 @@ nav ul li {
   margin: 18px 0;
 }
 
+.mainCart {
+  padding: 10rem;
+}
+
+.containerCart {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.35);
+  border-radius: 8px;
+}
+
+.containerCart h2 {
+  padding-bottom: 2rem;
+  color: #334218;
+}
+
+.containerCart a {
+  text-decoration: none;
+  color: #334218;
+}
+
+.containerCart a:hover {
+  text-decoration: underline;
+}
+
 form .input-box input {
   height: 3rem;
   width: 92.4%;
@@ -479,6 +507,12 @@ form .text h3 a:hover {
   .aboutleft img {
     width: 20rem;
   }
+  .containerCart {
+    padding: 5rem;
+  }
+  .containerCart h2 {
+    text-align: center;
+  }
 }
 
 @media (min-width: 700px) and (max-width: 799px) {
@@ -494,6 +528,12 @@ form .text h3 a:hover {
   }
   .aboutright p {
     width: 15rem;
+  }
+  .mainCart {
+    padding: 3rem;
+  }
+  .containerCart {
+    text-align: center;
   }
 }
 
@@ -562,6 +602,12 @@ form .text h3 a:hover {
   .aboutright p {
     width: 20rem;
   }
+  .mainCart {
+    padding: 2rem;
+  }
+  .containerCart {
+    text-align: center;
+  }
 }
 
 @media (min-width: 401px) and (max-width: 550px) {
@@ -570,6 +616,15 @@ form .text h3 a:hover {
   }
   .containerShop {
     padding: 1rem 0 0 0;
+  }
+  .aboutright p {
+    text-align: center;
+  }
+  .mainCart {
+    padding: 2rem;
+  }
+  .containerCart {
+    padding: 6rem;
   }
 }
 
@@ -620,11 +675,18 @@ form .text h3 a:hover {
 
   .aboutright p {
     width: 15.5rem;
+    text-align: center;
   }
   .containerShop {
     padding: 1rem 0 0 0;
   }
   .containerShop img {
     width: 16rem;
+  }
+  .containerCart {
+    padding: 6rem;
+  }
+  .mainCart {
+    padding: 2rem;
   }
 }
