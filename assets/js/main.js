@@ -24,14 +24,14 @@ loginForm.addEventListener('submit', function(event){
     const user = users.find(user => user.email === email && user.password === password)
 
     if(user){
-        alert('inicio de seccion exitoso!');
+        alert('inicio exitoso!');
 
         // Redirigir al usuario a la pagina principal
 
-        window.location.href= "../index.html";
+        window.location.href = "../index.html";
 
     }else{
-        alert('Correo o contraseña incorrecta!!!')
+        alert('Email o contraseña incorrecta!')
     }
 })
 
@@ -76,7 +76,7 @@ document.addEventListener('DOMContentLoaded',function(){
         const userExist = users.some(user => user.email === email);
 
         if(userExist){
-            alert('Este correo ya esta registrado!!');
+            alert('Este correo ya esta registrado.');
             return;
         } 
 
@@ -84,7 +84,7 @@ document.addEventListener('DOMContentLoaded',function(){
 
         users.push({name, email, password});
         localStorage.setItem('users', JSON.stringify(users));
-        alert('Registro exitoso!!!');
+        alert('Registro exitoso!');
 
         // Redirigirlo al index
         
