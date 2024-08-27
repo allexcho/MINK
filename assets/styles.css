@@ -469,8 +469,8 @@ form .text h3 a:hover {
   text-decoration: underline;
 }
 
-.addedToCart {
-  width: 30rem;
+.cart-item-image {
+  width: 25rem;
 }
 
 @media (min-width: 800px) {

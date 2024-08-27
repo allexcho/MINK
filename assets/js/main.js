@@ -1,93 +1,79 @@
-// Logica del login
+// Lógica del login
 
-// Seleccionar el formulario
+const loginForm = document.querySelector(".loginMain form");
 
-const loginForm = document.querySelector('form');
-
-// Agregar u evento para el envio del formulario en el localStorage
-
-loginForm.addEventListener('submit', function(event){
+if (loginForm) {
+  loginForm.addEventListener("submit", function (event) {
     event.preventDefault();
 
-    // Obtener los valores de los input
+    const email = this.querySelector('input[type="text"]').value;
+    const password = this.querySelector('input[type="password"]').value;
 
-    const email = document.querySelector('input[type="text"]').value;
+    const users = JSON.parse(localStorage.getItem("users")) || [];
 
-    const password = document.querySelector('input[type="password"]').value;
+    const user = users.find(
+      (user) => user.email === email && user.password === password
+    );
 
-    // Obtener la lista de los usuarios que se guardan
-
-    const users = JSON.parse(localStorage.getItem('users')) || [];
-
-    // Verificar si el usuario/contrasena existe
-
-    const user = users.find(user => user.email === email && user.password === password)
-
-    if(user){
-        alert('inicio exitoso!');
-
-        // Redirigir al usuario a la pagina principal
-
-        window.location.href = "../index.html";
-
-    }else{
-        alert('Email o contraseña incorrecta!')
+    if (user) {
+      alert("Inicio de sesión exitoso!");
+      window.location.href = "../index.html";
+    } else {
+      alert("Email o contraseña incorrecta.");
     }
-})
+  });
+}
 
-// Logica del registro
+// Lógica del registro
 
-document.addEventListener('DOMContentLoaded',function(){
+const registrationForm = document.querySelector("form:not(.loginMain form)");
 
-    const form = document.querySelector('form');
+if (registrationForm) {
+  registrationForm.addEventListener("submit", function (event) {
+    event.preventDefault();
 
-    form.addEventListener('submit', function(event){
-        event.preventDefault(); 
+    const name = this.querySelector(
+      'input[placeholder="Enter your name"]'
+    ).value;
+    const email = this.querySelector(
+      'input[placeholder="Enter your email"]'
+    ).value;
+    const password = this.querySelector(
+      'input[placeholder="Create password"]'
+    ).value;
+    const confirmPassword = this.querySelector(
+      'input[placeholder="Confirm password"]'
+    ).value;
+    const termsAccepted = this.querySelector('input[type="checkbox"]').checked;
 
-        const name = form.querySelector('input[placeholder="Enter your name"]').value;
-        const email = form.querySelector('input[placeholder="Enter your email"]').value;
-        const password = form.querySelector('input[placeholder="Create password" ]').value;
-        const confirmPassword = form.querySelector('input[ placeholder="Confirm password"]').value;
-        const termsAccepted = form.querySelector('input[type="checkbox"]').checked;
-   
-        // Validar nuestro formulario
+    if (!name || !email || !password || !confirmPassword) {
+      alert("Por favor, completa todos los campos.");
+      return;
+    }
 
-        if(!name || !email || !password || !confirmPassword){
-            alert('Por favor, completa todos los campos');
-            return;
-        }
+    if (password !== confirmPassword) {
+      alert("Las contraseñas no coinciden, ingresalas correctamente.");
+      return;
+    }
 
-        if(password !== confirmPassword){
-            alert('Las contraseñas no coinciden, ingresalas correctamente');
-            return;
-        }
+    if (!termsAccepted) {
+      alert("Para continuar, debes aceptar los términos y condiciones.");
+      return;
+    }
 
-        if(!termsAccepted){
-            alert('Para continuar, debes aceptar los terminos y condiciones.');
-            return;
-        }
+    const users = JSON.parse(localStorage.getItem("users")) || [];
 
-        // Obtener los usuarios existentes del local
+    const userExist = users.some((user) => user.email === email);
+    if (userExist) {
+      alert("Este correo ya está registrado.");
+      return;
+    }
 
-        const users= JSON.parse(localStorage.getItem('users')) || [];
+    users.push({ name, email, password });
+    localStorage.setItem("users", JSON.stringify(users));
 
-        //Verificar si ya esta registrado ese email
+    alert("Registro exitoso!");
 
-        const userExist = users.some(user => user.email === email);
-
-        if(userExist){
-            alert('Este correo ya esta registrado.');
-            return;
-        } 
-
-        // Agregar el nuevo usuario
-
-        users.push({name, email, password});
-        localStorage.setItem('users', JSON.stringify(users));
-        alert('Registro exitoso!');
-
-        // Redirigirlo al index
-        
-        window.location.href = '../index.html';
-    });
-})
+    window.location.href = "../index.html";
+  });
+}

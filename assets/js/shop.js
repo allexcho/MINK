@@ -18,10 +18,11 @@ function renderProducts() {
     products.forEach(product => {
         const li = document.createElement('li');
         li.innerHTML = `
-        <img src="${product.image}" alt="${product.name}">
-        <h4>${product.name}</h4>
-        <p>${product.price}</p>
-        <button onclick="addToCart(${product.id})">Comprar</button>`;
+         <img src="${product.image}" alt="${product.name}">
+            <h4>${product.name}</h4>
+            <p>${product.price}</p>
+            <button onclick="addToCart(${product.id})">Comprar</button>
+        `;
 
         productList.appendChild(li);
     });
@@ -39,8 +40,9 @@ function addToCart(productId) {
 
 function updateCartCount() {
     const cartIcon = document.querySelector('.cart a');
-    cartIcon.innerHTML = `<i class="fa-solid fa-cart-shopping"></i> (${cart.length})`;
+    cartIcon.innerHTML = `<i class="fa-solid fa-cart-shopping"></i> (${cart.length})`
 }
+
 
 function saveCart() {
     localStorage.setItem('cart', JSON.stringify(cart));
