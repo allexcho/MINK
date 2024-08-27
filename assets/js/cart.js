@@ -19,13 +19,13 @@ function renderCart() {
         cart.forEach(item => {
             const li = document.createElement('li');
             li.innerHTML = `
-            <img src="${item.image}" alt="${item.name}">
+            <img src="${item.image}" alt="${item.name}" class="addedToCart">
             <h4>${item.name}</h4>
             <p>${item.price}</p>
-            <button onclick="removeFromCart(${item.id})">Eliminar</button>
-            `;
-              cartList.appendChild(li);
-              total += item.price;
+            <button onclick="removeFromCart(${item.id})">Eliminar</button>`;
+
+            cartList.appendChild(li);
+            total += item.price;
 
         });
 
