@@ -58,3 +58,5 @@ function checkout(){
     localStorage.removeItem("cart");
     renderCart()
 };
+
+document.addEventListener("DOMContentLoaded", renderCart);
