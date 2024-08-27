@@ -8,9 +8,9 @@ function renderCart() {
     if (cart.length === 0) {
         cartContainer.innerHTML = `
         <h2>El carrito esta vacio</h2>
-          <a href="/pages/shop.html">
+        <a href="/pages/shop.html">
             Comprar
-          </a>
+        </a>
         `;
     } else {
         const cartList = document.createElement('ul');
@@ -51,7 +51,7 @@ function removeFromCart(productId){
 }
 
 function checkout(){
-    alert('¡Gracias por tu compra!!!');
+    alert('¡Gracias por tu compra!');
     localStorage.removeItem('cart');
     renderCart();
 }
