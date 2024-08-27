@@ -1,5 +1,4 @@
-// Product data
-
+//product data
 const products = [
     { id: 1, name: "Camisa", price: 100, image: "../assets/img/shop1.JPG" },
     { id: 2, name: "Camisa", price: 100, image: "../assets/img/shop2.JPG" },
@@ -11,57 +10,55 @@ const products = [
 
 let cart = [];
 
-// Funcion para renderizar los productos
-
-function renderProducts(){
-    const productList = document.querySelector(".containerShop ul");
-    productList.innerHTML = "";
+//funcion para renderizar productos
+function renderProducts() {
+    const productList = document.querySelector('.containerShop ul');
+    productList.innerHTML = '';
 
     products.forEach(product => {
-        const li = document.createElement("li");
-        li.innerHTML = 
-        `<img src="${product.image}" alt="${product.name}">
+        const li = document.createElement('li');
+        li.innerHTML = `
+         <img src="${product.image}" alt="${product.name}">
             <h4>${product.name}</h4>
             <p>${product.price}</p>
-            <button onclick = "addToCart(${product.id})">Comprar</button>`;
+            <button onclick="addToCart(${product.id})">Comprar</button>
+        `;
 
         productList.appendChild(li);
     });
-};
+}
 
-function addToCart(productId){
-    const product = products.find(product => product.id === productId);
-
-    if(product){
+function addToCart(productId) {
+    const product = products.find(p => p.id === productId);
+    if (product) {
         cart.push(product)
         updateCartCount();
-        savedCart();
-    };
-};
+        saveCart();
+    }
 
-function updateCartCount(){
-    const cartIcon = document.querySelector(".cart a");
-    cartIcon.innerHTML = 
-    `<i class="fa-solid fa-cart-shopping"></i>
+}
+
+function updateCartCount() {
+    const cartIcon = document.querySelector('.cart a');
+    cartIcon.innerHTML = `i class="fa-solid fa-cart-shopping"></i>
     (${cart.length})`;
-};
+}
 
-function savedCart(){
-    localStorage.setItem("cart", JSON.stringify(cart));
-};
+function saveCart() {
+    localStorage.setItem('cart', JSON.stringify(cart));
+}
 
-function loadCart(){
-    const savedCart = localStorage.getItem("cart")
-
+function loadCart() {
+    const savedCart = localStorage.getItem('cart')
     if (savedCart) {
         cart = JSON.parse(savedCart);
         updateCartCount();
-    };
-};
+    }
+}
 
-// Inicializacion 
-
-document.addEventListener("DOMContentLoaded", () => {
+//Initialize
+document.addEventListener('DOMContentLoaded', () => {
     renderProducts();
     loadCart();
 })
+
