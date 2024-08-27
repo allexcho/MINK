@@ -19,12 +19,15 @@ function renderCart() {
     cart.forEach((item) => {
       const li = document.createElement("li");
       li.innerHTML = `
+      <div class="innerCart">
                 <img src="${item.image}" alt="${item.name}" class="cart-item-image">
                 <h4>${item.name}</h4>
                 <p>${item.price}</p>
+                </div>
             `;
       const removeButton = document.createElement("button");
       removeButton.textContent = "Eliminar";
+      removeButton.setAttribute("class", "innerButton");
       removeButton.onclick = () => removeFromCart(item.id);
       li.appendChild(removeButton);
       cartList.appendChild(li);
