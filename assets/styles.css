@@ -473,6 +473,11 @@ form .text h3 a:hover {
   width: 20rem;
 }
 
+.innerCart {
+  text-align: center;
+  color: #334218;
+}
+
 @media (min-width: 800px) {
   .hamburger-icon {
     display: none;
