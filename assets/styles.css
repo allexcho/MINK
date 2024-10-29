@@ -485,7 +485,6 @@ form .text h3 a:hover {
 .contact-wrapper {
   display: flex;
   gap: 2rem;
-  align-items: flex-start;
   flex-wrap: wrap;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.35);
   border-radius: 8px;
@@ -712,6 +711,22 @@ form .text h3 a:hover {
   }
   .containerCart {
     text-align: center;
+  }
+}
+
+@media (min-width: 551px) and (max-width: 699px) {
+  .contact-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .contact-wrapper h2 {
+    text-align: center;
+  }
+  .button-group {
+    text-align: center;
+  }
+  .image-container img {
+    width: 23rem;
   }
 }
 
