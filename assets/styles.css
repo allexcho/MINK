@@ -478,6 +478,102 @@ form .text h3 a:hover {
   color: #334218;
 }
 
+.contact-section {
+  margin-top: 1.5rem;
+}
+
+.contact-wrapper {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.35);
+  border-radius: 8px;
+  padding: 2rem;
+}
+
+.form-container {
+  flex: 1;
+}
+
+.contact-section h2 {
+  text-align: left;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  color: #334218;
+}
+
+.contact-form .input-row {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.contact-form .input-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label {
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+  font-size: 0.9rem;
+  color: #334218;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form input[type="tel"],
+.contact-form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1.5px solid #c7bebe;
+  border-radius: 6px;
+  outline: none;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+.contact-form textarea {
+  resize: vertical;
+  margin-bottom: 1rem;
+}
+
+.button-group {
+  text-align: left;
+}
+
+.button-group button {
+  padding: 0.4rem 1rem;
+  font-size: 0.9rem;
+  color: white;
+  background-color: #334218;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.button-group button:hover {
+  background-color: white;
+  color: #334218;
+  border: 2px solid #334218;
+}
+
+.image-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-container img {
+  width: 17rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+}
+
 @media (min-width: 800px) {
   .hamburger-icon {
     display: none;
@@ -635,6 +731,12 @@ form .text h3 a:hover {
   .containerCart {
     padding: 6rem;
   }
+  .form-container h2 {
+    text-align: center;
+  }
+  .button-group {
+    text-align: center;
+  }
 }
 
 @media (min-width: 300px) and (max-width: 400px) {
@@ -697,5 +799,14 @@ form .text h3 a:hover {
   }
   .mainCart {
     padding: 2rem;
+  }
+  .form-container h2 {
+    text-align: center;
+  }
+  .button-group {
+    text-align: center;
+  }
+  .image-container img {
+    width: 13rem;
   }
 }
