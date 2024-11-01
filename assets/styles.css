@@ -109,6 +109,7 @@ nav ul li {
   gap: 2rem;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.35);
   border-radius: 8px;
+  padding: 2rem;
 }
 
 .containerleft {
@@ -151,6 +152,7 @@ nav ul li {
 .bottommain {
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.35);
   border-radius: 8px;
+  padding: 2rem;
 }
 
 .bottomimgs ul {
@@ -724,6 +726,7 @@ form .text h3 a:hover {
   .contact-wrapper {
     display: flex;
     flex-direction: column;
+    gap: 15px;
   }
   .contact-wrapper h2 {
     text-align: center;
@@ -766,6 +769,7 @@ form .text h3 a:hover {
   .contact-wrapper {
     display: flex;
     flex-direction: column;
+    padding: 1.5rem;
   }
   .image-container img {
     height: 20rem;
