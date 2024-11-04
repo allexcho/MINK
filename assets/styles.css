@@ -294,14 +294,96 @@ nav ul li {
   box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
 }
 
+.mainShop {
+  display: flex;
+}
+
+.shop-container {
+  display: flex;
+  align-items: flex-start;
+  padding-top: 1rem;
+}
+
+.filter-section {
+  width: 250px;
+  padding: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.35);
+  border-radius: 8px;
+}
+
+.products-section {
+  flex-grow: 1;
+  padding: 0 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.products-section img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.filter-section h2 {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-top: 0;
+}
+
+.category-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 10px 0;
+}
+
+.category-list li {
+  font-size: 1em;
+  margin: 5px 0;
+}
+
+.filter-toggle {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+.filter-toggle i {
+  font-size: 1.2em;
+  color: #888;
+}
+
+.price-filter {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.price-filter label {
+  font-size: 0.9em;
+  margin-right: 5px;
+}
+
+.price-filter input {
+  width: 60px;
+  padding: 5px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+}
+
+.price-filter-button i {
+  font-size: 1.2em;
+  color: #888;
+}
+
 #shopTitle {
   text-align: center;
   padding-top: 2rem;
   font-weight: normal;
+  color: #334218;
 }
 
 .mainShop {
-  padding: 2rem;
+  padding: 1rem;
 }
 
 .containerShop {
