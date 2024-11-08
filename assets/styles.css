@@ -321,6 +321,7 @@ nav ul li {
 .sort-filter select, .category-filter select {
   padding: 5px;
   border-radius: 5px;
+  font-size: 0.9em;
 }
 
 #shopTitle {
