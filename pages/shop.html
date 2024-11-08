@@ -47,29 +47,29 @@
     <main>
       <h1 id="shopTitle">Novedades</h1>
       <div class="mainShop">
-        <div class="shop-container">
-          <aside class="filter-section">
-            <h2>Categorías</h2>
-            <ul class="category-list">
-              <li>Ofertas</li>
-              <li>Camisas</li>
-              <li>Blusas</li>
-              <li>Musculosas</li>
-              <li>Pantalones</li>
-              <li>Tops</li>
-            </ul>
-            <div class="filter-toggle">
-              <i class="fa fa-chevron-down"></i>
-            </div>
-            <h2>Precio</h2>
-            <div class="price-filter">
-              <label for="min-price">DESDE</label>
-              <input type="number" id="min-price" placeholder="0" />
-              <label for="max-price">HASTA</label>
-              <input type="number" id="max-price" placeholder="288000" />
-            </div>
-          </aside>
+        <div class="shopFilter">
+        <div class="filter-bar">
+          <div class="sort-filter">
+            <label for="sort-by">Ordenar por:</label>
+            <select id="sort-by">
+              <option value="default">Seleccionar</option>
+              <option value="most-sold">Más Vendidos</option>
+              <option value="price-low">Menor a Mayor</option>
+              <option value="price-high">Mayor a Menor</option>
+            </select>
+          </div>
+          <div class="category-filter">
+            <label for="filter-by">Filtrar por:</label>
+            <select id="filter-by">
+              <option value="default">Seleccionar</option>
+              <option value="ofertas">Ofertas</option>
+              <option value="camisas">Camisas</option>
+              <option value="blusas">Blusas</option>
+              <option value="pantalones">Pantalones</option>
+            </select>
+          </div>
         </div>
+      </div>
         <div class="mainShop">
           <div class="containerShop">
             <ul>

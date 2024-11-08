@@ -294,85 +294,33 @@ nav ul li {
   box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
 }
 
-.mainShop {
-  display: flex;
+.shopFilter {
+  padding: 1rem 1rem 0 1rem;
+  color: #334218;
 }
 
-.shop-container {
+.filter-bar {
   display: flex;
-  align-items: flex-start;
-  padding-top: 1rem;
-}
-
-.filter-section {
-  width: 250px;
-  padding: 20px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.35);
   border-radius: 8px;
 }
 
-.products-section {
-  flex-grow: 1;
-  padding: 0 10px;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 20px;
-}
-
-.products-section img {
-  width: 100%;
-  border-radius: 5px;
-}
-
-.filter-section h2 {
-  font-size: 1.2em;
-  font-weight: bold;
-  margin-top: 0;
-}
-
-.category-list {
-  list-style-type: none;
-  padding: 0;
-  margin: 10px 0;
-}
-
-.category-list li {
-  font-size: 1em;
-  margin: 5px 0;
-}
-
-.filter-toggle {
-  display: flex;
-  justify-content: center;
-  margin: 10px 0;
-}
-
-.filter-toggle i {
-  font-size: 1.2em;
-  color: #888;
-}
-
-.price-filter {
+.sort-filter, .category-filter {
   display: flex;
   align-items: center;
-  margin-top: 10px;
+  gap: 10px;
 }
 
-.price-filter label {
-  font-size: 0.9em;
-  margin-right: 5px;
+.sort-filter label, .category-filter label {
+  font-weight: bold;
 }
 
-.price-filter input {
-  width: 60px;
+.sort-filter select, .category-filter select {
   padding: 5px;
-  margin-right: 10px;
-  border: 1px solid #ccc;
-}
-
-.price-filter-button i {
-  font-size: 1.2em;
-  color: #888;
+  border-radius: 5px;
 }
 
 #shopTitle {
@@ -734,7 +682,7 @@ form .text h3 a:hover {
   }
   .containerCart {
     text-align: center;
-  }
+  } 
 }
 
 @media (max-width: 699px) {
@@ -788,17 +736,14 @@ form .text h3 a:hover {
     display: flex;
     flex-direction: column;
   }
-
   .aboutleft img {
     width: 20rem;
   }
-
   .aboutright {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-
   .aboutright p {
     width: 20rem;
   }
@@ -807,6 +752,11 @@ form .text h3 a:hover {
   }
   .containerCart {
     text-align: center;
+  }
+  .contact-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 
@@ -862,6 +812,50 @@ form .text h3 a:hover {
   .image-container img {
     height: 20rem;
   }
+  .filter-bar {
+    flex-direction: column;
+    align-items: stretch; 
+    padding: 1rem;
+  }
+  .sort-filter, .category-filter {
+    flex-direction: column; 
+    align-items: flex-start;
+    margin-bottom: 1rem; 
+    gap: 0;
+  }
+  .category-filter {
+    margin-bottom: 0;
+  }
+  .sort-filter label, .category-filter label {
+    margin-bottom: 4px; 
+  }
+
+  .filter-bar select, .filter-bar input {
+    width: 100%; 
+    padding: 6px; 
+    border-radius: 5px;
+  }
+  .contact-section {
+    padding: 15px; 
+  }
+  .contact-wrapper {
+    max-width: 100%; 
+    padding: 15px;
+    margin: 0 auto; 
+    gap: 1rem;
+  }
+  .contact-form .input-row {
+    gap: 0.5rem;
+  }
+  .form-container {
+    width: 100%; 
+    max-width: 400px; 
+    margin: 0 auto; 
+  }
+  .contact-form input, .contact-form textarea {
+    width: 100%; 
+    box-sizing: border-box; 
+  }
 }
 
 @media (min-width: 300px) and (max-width: 400px) {
@@ -908,7 +902,6 @@ form .text h3 a:hover {
     flex-direction: column;
     align-items: center;
   }
-
   .aboutright p {
     width: 15.5rem;
     text-align: center;
@@ -917,7 +910,7 @@ form .text h3 a:hover {
     padding: 1rem 0 0 0;
   }
   .containerShop img {
-    width: 16rem;
+    width: 14rem;
   }
   .containerCart {
     padding: 6rem;
@@ -931,12 +924,51 @@ form .text h3 a:hover {
   .button-group {
     text-align: center;
   }
+  .image-container img {
+    height: 20rem;
+  }
+  .filter-bar {
+    flex-direction: column;
+    align-items: stretch; 
+    padding: 1rem;
+  }
+  .sort-filter, .category-filter {
+    flex-direction: column; 
+    align-items: flex-start;
+    margin-bottom: 1rem; 
+    gap: 0;
+  }
+  .category-filter {
+    margin-bottom: 0;
+  }
+  .sort-filter label, .category-filter label {
+    margin-bottom: 4px; 
+  }
+  .filter-bar select, .filter-bar input {
+    width: 100%; 
+    padding: 6px; 
+    border-radius: 5px;
+  }
+  .contact-section {
+    padding: 10px; 
+  }
   .contact-wrapper {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    max-width: 100%; 
+    padding: 10px;
+    gap: 1rem;
   }
-  .image-container img {
-    height: 20rem;
+  .form-container {
+    width: 100%; 
+    max-width: 300px; 
+    margin: 0 auto; 
+  }
+  .contact-form input, .contact-form textarea {
+    width: 100%;
+    box-sizing: border-box; 
+  }
+  .contact-form .input-row {
+    gap: 0.5rem;
   }
 }
