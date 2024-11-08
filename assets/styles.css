@@ -761,11 +761,6 @@ form .text h3 a:hover {
 }
 
 @media (min-width: 551px) and (max-width: 699px) {
-  .contact-wrapper {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-  }
   .contact-wrapper h2 {
     text-align: center;
   }
@@ -779,6 +774,30 @@ form .text h3 a:hover {
     width: 100%;
     height: 25rem;
     object-fit: cover;
+  }
+  .contact-section {
+    padding: 15px; 
+  }
+  .contact-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 100%; 
+    padding: 15px;
+    margin: 0 auto; 
+    gap: 1rem;
+  }
+  .contact-form .input-row {
+    gap: 0.5rem;
+  }
+  .form-container {
+    width: 100%; 
+    max-width: 400px; 
+    margin: 0 auto; 
+  }
+  .contact-form input, .contact-form textarea {
+    width: 100%; 
+    box-sizing: border-box; 
   }
 }
 
