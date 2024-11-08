@@ -463,7 +463,7 @@ form .input-box input {
   outline: none;
   padding: 0 15px;
   color: #333;
-  border: 1.5px solid #334218;
+  border: 1.5px solid #c7bebe;
   border-radius: 6px;
   transition: all 0.3s ease;
 }
@@ -570,7 +570,7 @@ form .text h3 a:hover {
 .contact-form textarea {
   width: 100%;
   padding: 0.5rem;
-  border: 1.5px solid #334218;
+  border: 1.5px solid #c7bebe;
   border-radius: 6px;
   outline: none;
   font-size: 0.9rem;
